@@ -162,11 +162,7 @@ footer p {
     
     .menu-desktop {
         display: none;
-    }
-
-    header .btn-contato {
-        display: none;
-    }
+    }    
 
     section.inicio {
         padding: 10px 4%;
