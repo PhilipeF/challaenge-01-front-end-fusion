@@ -7,7 +7,13 @@
 
 body {
     background-color: #000;
+    color: #FFF;
     height: 100vh;
+}
+
+h2.titulo {
+    font-size: 34px;
+    margin-bottom: 20px;
 }
 
 .conteudo {
@@ -19,8 +25,16 @@ body {
     display: flex;
 }
 
+/* Header */
 header {
-    padding: 40px 4%;
+    padding: 30px 4%;
+    border-bottom: 1px solid #5c5c5c;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;   
+    background: #000;
 }
 
 .logo img {
@@ -34,18 +48,15 @@ header > .conteudo {
 }
 
 header a {
-    color: #5c5c5c;
+    color: #fff;
     text-decoration: none;
     display: inline-block;
-    transition: .2s
+    transition: .2s    
 }
 
 header a:hover {
-    color: #FFF;
     transform: scale(1.05);
 }
-
-
 
 header nav ul {
     list-style-type: none;
@@ -69,36 +80,61 @@ header nav ul li {
 
 .btn-contato button:hover {
     transform: scale(1.05);
-
 }
 
-/* MAIN */
-section.topo-do-site {
+/* Todo do site */
+section.inicio {
     padding: 40px 4%;
+    margin-top: 180px;
+    margin-bottom: 20px;
 }
 
-section.topo-do-site .flex {
+section.inicio .flex {
     align-items: center;
     justify-content: center;
     gap: 90px;
 }
 
-.topo-do-site h1 {
-    color: #fff;
+.inicio h1 {
     font-size: 38px;
     line-height: 40px;
 }
 
-.topo-do-site .txt-topo-site p {
-    color: #fff;
+.inicio .txt-inicio p {
     margin: 40px 0;
 }
 
-.img-topo-site img {
-    height: 300px;
+/* Especialidades */
+section.especialidades {
+    padding: 40px 4%;
 }
 
+.habilidades .habilidades-box {
+    padding: 40px;
+}
 
+.habilidades .habilidades-box i {
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+}
 
+.habilidades .habilidades-box h3 {
+    margin-top: 20px;
+}
 
+.habilidades .habilidades-box p {
+    margin-top: 10px;
+}
 
+/* Sobre */
+section.sobre {
+    padding: 40px 4%;
+
+}
+
+footer {
+    padding: 30px 4%;
+    border-top: 1px solid #5c5c5c;
+
+}
