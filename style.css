@@ -136,5 +136,8 @@ section.sobre {
 footer {
     padding: 30px 4%;
     border-top: 1px solid #5c5c5c;
+}
 
+@media screen and(max-width: 1020px) {
+    
 }
