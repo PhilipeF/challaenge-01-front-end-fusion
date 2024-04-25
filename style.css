@@ -104,33 +104,45 @@ section.inicio .flex {
     margin: 40px 0;
 }
 
-/* Especialidades */
-section.especialidades {
+/* Habilidades */
+section#habilidades {
     padding: 40px 4%;
 }
 
-.habilidades .habilidades-box {
+#habilidades .habilidades-box {
     padding: 40px;
 }
 
-.habilidades .habilidades-box i {
+#habilidades .habilidades-box i {
     font-size: 60px;
     display: flex;
     justify-content: center;
 }
 
-.habilidades .habilidades-box h3 {
+#habilidades .habilidades-box h3 {
     margin-top: 20px;
 }
 
-.habilidades .habilidades-box p {
+#habilidades .habilidades-box p {
     margin-top: 10px;
 }
 
 /* Sobre */
-section.sobre {
+section#sobre {
     padding: 40px 4%;
+}
 
+#sobre p {
+    margin-bottom: 20px;
+}
+
+#sobre .flex {
+    gap: 10px;
+}
+
+.btn-sobre {
+    display: flex;
+    gap: 10px;
 }
 
 footer {
@@ -138,6 +150,28 @@ footer {
     border-top: 1px solid #5c5c5c;
 }
 
-@media screen and(max-width: 1020px) {
+footer p {
+    text-align: end;
+}
+
+@media screen and (max-width: 1020px) {
+    .flex {
+        flex-direction: column;        
+    }
     
+    .menu-desktop {
+        display: none;
+    }
+
+    header .btn-contato {
+        display: none;
+    }
+
+    section.inicio {
+        padding: 10px 4%;
+    }
+
+    section.inicio .flex {
+        gap: 40px;
+    }   
 }
