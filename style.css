@@ -16,7 +16,7 @@ h2.titulo {
     margin-bottom: 20px;
 }
 
-.conteudo {
+.container {
     max-width: 1280px;
     margin: 0 auto;
 }
@@ -41,7 +41,7 @@ header {
     height: 50px;
 }
 
-header > .conteudo {
+header > .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -133,7 +133,7 @@ section#sobre {
 }
 
 #sobre p {
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 #sobre .flex {
@@ -142,7 +142,7 @@ section#sobre {
 
 .btn-sobre {
     display: flex;
-    gap: 10px;
+    gap: 20px;
 }
 
 footer {
@@ -154,6 +154,47 @@ footer p {
     text-align: end;
     font-size: 12px;
 }
+
+
+.menu-mobile {
+    color: #fff;
+    position: absolute;
+    top: 118px;
+    left: 0px;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+
+.menu-mobile ul li {
+    display: block;
+    padding: 20px;
+    font-size: 24px;
+}
+
+.menu-mobile ul li:hover {
+    background-color: #5c5c5c;
+
+}
+
+#btn-menu-mobile {
+    width: 30px;
+    height: 27px;
+    border: 2px solid #5c5c5c;
+    border-radius: 5px;
+    background: transparent;
+}
+
+.linha {
+    width: 20px;
+    height: 2px;
+    border: 1px solid #5c5c5c;
+    background: #5c5c5c;
+    display: block;
+    margin: 3px;
+}
+
+
 
 @media screen and (max-width: 1020px) {
     .flex {
@@ -171,4 +212,10 @@ footer p {
     section.inicio .flex {
         gap: 40px;
     }   
+}
+
+@media screen and (min-width: 1028px) {
+    .menu-mobile {
+        display: none;
+    }
 }
