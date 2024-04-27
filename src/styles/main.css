@@ -241,7 +241,7 @@ footer p {
 
     .menu-mobile.abrir {
         visibility: visible;
-        height: calc(100vh - 117px);
+        height: calc(100vh);
     }
 
     #btn-menu-mobile {
